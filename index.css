@@ -360,6 +360,7 @@ select {
 
 /* NOTE: Don't leave default selectors below your media query otherwise it will overwrite them*/
 .primary-navigation {
+	--gap: clamp(1.5rem, 5vw, 3.5rem);
 	--underline-gap: 2rem;
 	list-style: none;
 	padding: 0;
@@ -436,6 +437,13 @@ select {
 }
 
 @media (min-width: 35em) and (max-width: 45em) {
+	.primary-navigation {
+		padding-inline: 3rem;
+	}
+
+	.primary-navigation a > span {
+		display: none;
+	}
 }
 
 /* Selects every direct descendant */
