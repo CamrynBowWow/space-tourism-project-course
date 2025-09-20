@@ -347,6 +347,17 @@ select {
 	transform: scale(1.5);
 }
 
+/* primary-header */
+
+.logo {
+	margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.primary-header {
+	justify-content: space-between;
+	align-items: center;
+}
+
 /* NOTE: Don't leave default selectors below your media query otherwise it will overwrite them*/
 .primary-navigation {
 	--underline-gap: 2rem;
@@ -355,6 +366,15 @@ select {
 	margin: 0;
 	background: hsl(var(--clr-dark) / 0.95);
 	/* backdrop-filter: blur(1.5rem); */
+}
+
+.primary-navigation a {
+	text-decoration: none;
+}
+
+.primary-navigation a > span {
+	font-weight: 700;
+	margin-right: 0.5em;
 }
 
 .mobile-nav-toggle {
@@ -415,13 +435,7 @@ select {
 	}
 }
 
-.primary-navigation a {
-	text-decoration: none;
-}
-
-.primary-navigation a > span {
-	font-weight: 700;
-	margin-right: 0.5em;
+@media (min-width: 35em) and (max-width: 45em) {
 }
 
 /* Selects every direct descendant */
