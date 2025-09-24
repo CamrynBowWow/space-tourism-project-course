@@ -442,7 +442,7 @@ select {
 	}
 }
 
-@media (min-width: 35em) and (max-width: 45em) {
+@media (min-width: 35em) and (max-width: 44.999em) {
 	.primary-navigation a > span {
 		display: none;
 	}
@@ -455,7 +455,13 @@ select {
 		position: relative;
 		height: 1px;
 		width: 100%;
-		background: red;
+		margin-right: -2.5rem;
+		background: hsl(var(--clr-white) / 0.25);
+		order: 1;
+	}
+
+	nav {
+		order: 2;
 	}
 
 	.primary-navigation {
